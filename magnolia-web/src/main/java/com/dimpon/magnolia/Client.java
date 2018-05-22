@@ -19,6 +19,9 @@ public interface Client {
 
     @RequestMapping(value = "/test", method = RequestMethod.GET)
     public String test();
+
+    @RequestMapping(value = "/pets/{name}", method = RequestMethod.GET)
+    public void createPet(@PathVariable("name") final String name);
 //@PathVariable(name = "name") String name
 
     @Component
@@ -27,6 +30,11 @@ public interface Client {
         @Override
         public String test() {
             return "No entry!!";
+        }
+
+        @Override
+        public void createPet(String name) {
+
         }
     }
 

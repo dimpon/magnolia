@@ -56,4 +56,13 @@ public class WebController {
         model.addAttribute("pets", pets);
         return "index";
     }
+
+    @RequestMapping(value = "/pets/{name}", method = RequestMethod.GET)
+    public String pets(@PathVariable(name = "name") String name, Model model) {
+
+        client.createPet(name);
+
+        model.addAttribute("pets", "created !!!");
+        return "index";
+    }
 }
