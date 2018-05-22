@@ -1,0 +1,24 @@
+abc: No faith
+
+magnolia:
+    client:
+        codes: '
+        {
+        "aa":"11",
+        "bb":"22",
+        "cc":"33"
+        }'
+
+my:
+  params:
+  - aaa
+  - bbb
+  - ccc
+
+  paramsik:
+    aaa: AAA
+    bbb: BBB
+    ccc: CCC
+
+sec:
+  value: Very Sec Value!!!

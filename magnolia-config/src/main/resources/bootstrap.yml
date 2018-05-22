@@ -1,0 +1,40 @@
+
+spring:
+  application:
+    name: magnolia-config
+
+
+
+#spring.cloud.config.server.git.uri: file://C:/Users/dponomarev.LUXOFT/projects/conf
+
+  cloud:
+    config:
+      server:
+        native:
+#         #search-locations: file:///@user.home@\projects\magnolia\configs
+           search-locations: file:///C:\Users\dponomarev.LUXOFT\projects\magnolia\configs
+
+
+  profiles:
+   active: native
+
+
+
+
+eureka:
+  client:
+    fetchRegistry: true
+    registerWithEureka: true
+    serviceUrl:
+      defaultZone: http://localhost:8762/eureka
+
+server:
+  port: 8600
+
+spring.cloud.bus.trace.enabled: true
+
+management.port: 9600
+management.security.enabled: false
+
+
+

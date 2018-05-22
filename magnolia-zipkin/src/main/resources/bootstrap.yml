@@ -1,0 +1,22 @@
+logging:
+  level:
+    ROOT: INFO
+    org.springframework: INFO
+
+spring:
+  application:
+    name: magnolia-zipkin
+#  cloud:
+#    config:
+#      uri: http://localhost:8600
+
+server.port: 8902
+
+#http://localhost:8900/hystrix/monitor?stream=http%3A%2F%2Flocalhost%3A8900%2Fturbine.stream%3Fcluster%3DMAGNOLIA-CLIENT&delay=1000&title=CLIENT
+#http://localhost:8900/hystrix/monitor?stream=http%3A%2F%2Flocalhost%3A8900%2Fturbine.stream%3Fcluster%3DMAGNOLIA-SERVICE&delay=1000&title=SERVICE
+
+
+
+
+
+

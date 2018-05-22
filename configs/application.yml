@@ -1,0 +1,59 @@
+
+eureka:
+  client:
+    fetchRegistry: true
+    registerWithEureka: true
+    serviceUrl:
+      defaultZone: http://localhost:8762/eureka
+
+
+logging:
+  level:
+    ROOT: INFO
+    org.springframework: INFO
+
+management:
+  security:
+    enabled: false
+
+
+app:
+  name: Diag Service Colector
+  descriptio: Diag Entry Collector Description
+  version:  12345
+contact:
+  name: Dmitry Ponomarev
+  email:  dponomarev@luxoft.com
+  organization: http://www.luxoft.com
+
+
+valueFromCommonConfig: Zozoma This value came from common config
+
+feign:
+  hystrix:
+    enabled: true
+
+ribbon:
+  eureka:
+    enabled: true
+  MaxAutoRetries: 0
+  MaxAutoRetriesNextServer: 1
+  ReadTimeout: 1000
+
+security:
+  oauth2:
+    client:
+      clientId: client
+      clientSecret: secret
+      scope: openid
+      accessTokenUri: http://localhost:8500/uaa/oauth/token
+      userAuthorizationUri: http://localhost:8500/uaa/oauth/authorize
+    resource:
+      jwt:
+        key-uri: http://localhost:8500/uaa/oauth/token_key
+
+
+
+
+
+

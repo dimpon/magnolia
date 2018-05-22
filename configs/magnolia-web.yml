@@ -1,0 +1,9 @@
+magnolia:
+  web:
+    value1: yo-yo-yo!!!
+
+hystrix.command.execution.isolation.strategy: SEMAPHORE
+
+feign:
+  hystrix:
+    enabled: false

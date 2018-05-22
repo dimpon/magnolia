@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: magnolia-client
+  cloud:
+    config:
+      uri: http://localhost:8600
+
+server:
+  port: 8805
+
+feign:
+  hystrix:
+    enabled: true
+
+
+
+
+
+
+
+
+

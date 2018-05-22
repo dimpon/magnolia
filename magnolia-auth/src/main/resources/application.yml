@@ -1,0 +1,18 @@
+logging:
+  level:
+    ROOT: INFO
+    org.springframework: INFO
+
+spring.application.name: AuthService
+server:
+  port: 8500
+  contextPath: /uaa
+
+management:
+  security:
+    enabled: false
+
+
+
+
+

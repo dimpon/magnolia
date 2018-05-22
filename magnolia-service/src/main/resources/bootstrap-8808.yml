@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: magnolia-service
+  cloud:
+    config:
+      uri: http://localhost:8600
+
+server:
+  port: 8808

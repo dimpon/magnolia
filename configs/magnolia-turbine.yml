@@ -1,0 +1,20 @@
+turbine:
+  aggregator:
+    clusterConfig: MAGNOLIA-CLIENT,MAGNOLIA-SERVICE
+  appConfig: magnolia-client,magnolia-service
+
+
+eureka:
+  client:
+    fetchRegistry: true
+    registerWithEureka: false
+    serviceUrl:
+      defaultZone: http://localhost:8762/eureka
+
+
+
+
+management:
+  port: 8900
+  security:
+    enabled: false

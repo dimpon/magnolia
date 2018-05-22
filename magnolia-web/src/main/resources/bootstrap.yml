@@ -1,0 +1,29 @@
+
+spring:
+  application:
+    name: magnolia-web
+  cloud:
+    config:
+      uri: http://localhost:8600
+
+spring.thymeleaf.suffix: .html
+spring.messages.basename: i18n/messages
+spring.messages.encoding: UTF-8
+
+management.security.enabled: false
+security.basic.enabled: false
+
+server.port: 8806
+
+
+
+#hystrix.command.execution.isolation.strategy: SEMAPHORE
+
+#http://localhost:8900/hystrix/monitor?stream=http%3A%2F%2Flocalhost%3A8900%2Fturbine.stream%3Fcluster%3DMAGNOLIA-CLIENT&delay=1000&title=CLIENT
+#http://localhost:8900/hystrix/monitor?stream=http%3A%2F%2Flocalhost%3A8900%2Fturbine.stream%3Fcluster%3DMAGNOLIA-SERVICE&delay=1000&title=SERVICE
+
+
+
+
+
+

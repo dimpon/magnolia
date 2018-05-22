@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="#{index.title}"></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+</head>
+<body>
+
+
+<section class="container">
+    <h3 th:text="#{index.welcome}"/>
+    <div th:text="${pets}"></div>
+</section>
+</body>
+</html>
